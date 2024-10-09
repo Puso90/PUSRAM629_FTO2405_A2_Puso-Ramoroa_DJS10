@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "/src/App.css";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
@@ -35,9 +36,9 @@ const Posts = () => {
   return (
     <div>
       <h1>Posts</h1>
-      <ul>
+      <ul class="no-decorations">
         {posts.map(post => (
-          <li key={post.id}>
+          <li className='list-style' key={post.id}>
             <h2>{post.id}.  {post.title}</h2>
             <p>{post.body}</p>
           </li>
