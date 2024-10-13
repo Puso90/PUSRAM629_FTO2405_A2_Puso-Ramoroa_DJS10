@@ -35,8 +35,8 @@ const Posts = () => {
 
   return (
     <div>
-      <h1>Posts</h1>
-      <ul class="no-decorations">
+      <h1 className='heading'>Posts</h1>
+      <ul className="list-container">
         {posts.map(post => (
           <li className='list-style' key={post.id}>
             <h2>{post.id}.  {post.title}</h2>
