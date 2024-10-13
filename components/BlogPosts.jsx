@@ -26,7 +26,7 @@ const Posts = () => {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className='loading-page'>Loading...</div>;
   }
 
   if (error) {
